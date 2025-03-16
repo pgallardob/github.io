@@ -1,0 +1,94 @@
+body {
+  background-color: #f8f9fa; /* Color de fondo */
+  font-family: Arial, sans-serif; /* Fuente general */
+}
+
+.encabezado {
+  max-width: 1200px;
+  margin:auto;
+  display: flex; /* Usar flexbox para alinear texto e imagen */
+  justify-content: space-between; /* Espaciado entre texto e imagen */
+  align-items: center; /* Alinear verticalmente */
+  border: 1px solid #ccc; /* Borde alrededor del encabezado */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espaciado inferior */
+  background-color: #746d6d; /* Fondo blanco */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Texto del encabezado */
+.header-texto {
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Estilo de la imagen en el encabezado */
+.imagen {
+  width: 100px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: auto; /* Centrar el contenedor */
+}
+
+.carousel {
+  border-radius: 15px; /* Bordes redondeados del carrusel */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra del carrusel */
+}
+
+.carousel-item img {
+  height: 500px; /* Altura de las imágenes del carrusel */
+  object-fit: cover; /* Ajustar la imagen para cubrir el área */
+}
+
+.galeria {
+  margin-top: 20px; /* Espaciado superior de la galería */
+}
+
+.galeria-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar las miniaturas */
+}
+
+.thumbnail {
+  width: 100px; /* Ancho de las miniaturas */
+  height: auto; /* Altura automática */
+  margin: 10px; /* Espaciado entre miniaturas */
+  border-radius: 10px; /* Bordes redondeados en miniaturas */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+  transition: transform 0.2s, box-shadow 0.2s; /* Efecto de transición */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra de las miniaturas */
+}
+
+.thumbnail:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Estilos para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  color: black; /* Cambiar el color de las flechas a negro */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Fondo negro para los iconos */
+  border-radius: 50%; /* Bordes redondeados para los iconos */
+  padding: 10px; /* Espaciado interno para los iconos */
+}
+/* Estilo del footer */
+.footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white; /* Color del texto */
+  text-align: center; /* Alinear texto al centro */
+  padding: 10px; /* Espaciado interno */
+  border-top: 1px solid #ccc; /* Borde superior */
+  margin-top: 20px; /* Espaciado superior */
+  border-radius: 10px;
+}
+

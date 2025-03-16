@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Sin margen */
+    padding: 20px; /* Espaciado interno */
+}
+
+.encabezado {
+    max-width: 1200px;
+    margin:auto;
+    display: flex; /* Usar flexbox para alinear texto e imagen */
+    justify-content: space-between; /* Espaciado entre texto e imagen */
+    align-items: center; /* Alinear verticalmente */
+    border: 1px solid #080404; /* Borde alrededor del encabezado */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    background-color: #746d6d; /* Fondo blanco */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Texto del encabezado */
+  .header-texto {
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  /* Estilo de la imagen en el encabezado */
+  .imagen {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+.principal {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    background-color: #a7b0d4; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+.personal, .link {
+    margin-bottom: 20px; /* Espaciado inferior entre secciones */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    background-color: #9d9ea5; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+ol {
+    padding-left: 20px; /* Espaciado a la izquierda para la lista ordenada */
+}
+
+li {
+    margin-bottom: 10px; /* Espaciado inferior entre elementos de la lista */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.Detalles {
+  max-width: 1300px;
+  margin:auto;
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave */
+  background-color: #8492a7; /* Color de fondo */
+  text-align: justify; /* Justificar el texto */
+}
+
+.Detalles p {
+  text-align: justify; /* Justificar el texto dentro del párrafo */
+  margin: 0; /* Eliminar márgenes del párrafo */
+}
+/* Estilo del footer */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinear texto al centro */
+    padding: 10px; /* Espaciado interno */
+    border-top: 1px solid #ccc; /* Borde superior */
+    margin-top: 20px; /* Espaciado superior */
+    border-radius: 10px;
+  }
+  
