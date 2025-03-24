@@ -1,116 +1,90 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8; /* Color de fondo claro */
+  background-color: #f0f4f8; 
   margin: 0;
   padding: 0;
 }
-
-/* Contenedor principal */
 .contenedor {
-  max-width: 1200px; /* Ancho máximo del contenedor */
-  margin: auto; /* Centrar el contenedor */
+  max-width: 1200px; 
+  margin: auto; 
   padding: 20px;
 }
-
-/* Encabezado */
 .encabezado {
-  display: flex; /* Usar flexbox para alinear texto e imagen */
-  justify-content: space-between; /* Espaciado entre texto e imagen */
-  align-items: center; /* Alinear verticalmente */
-  border: 1px solid #ccc; /* Borde alrededor del encabezado */
-  border-radius: 10px; /* Esquinas redondeadas */
-  padding: 20px; /* Espaciado interno */
-  margin-bottom: 20px; /* Espaciado inferior */
-  background-color: #746d6d; /* Fondo blanco */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Sombra suave */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  background-color: #746d6d;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
 }
-
-/* Texto del encabezado */
 .header-texto {
-  text-align: left; /* Alinear texto a la izquierda */
+  text-align: left;
 }
-
-/* Estilo de la imagen en el encabezado */
 .imagen {
-  width: 100px; /* Ancho de la imagen */
-  height: auto; /* Altura automática para mantener la proporción */
+  width: 100px;
+  height: auto;
 }
-
-/* Secciones */
 .seccion {
-  border: 1px solid #ccc; /* Borde alrededor de cada sección */
-  border-radius: 10px; /* Esquinas redondeadas */
-  padding: 15px; /* Espaciado interno */
-  margin-bottom: 20px; /* Espaciado inferior */
-  background-color: #ffffff; /* Fondo blanco */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 0px 10px;
 }
-
-/* Estilo del div de redes sociales */
 .redes-sociales {
   max-width: 1200px;
   margin:auto; 
-  border: 1px solid #ccc; /* Borde alrededor del div de redes sociales */
-  border-radius: 10px; /* Esquinas redondeadas */
-  padding: 5px; /* Espaciado interno */
-  margin-bottom: 20px; /* Espaciado inferior */
-  align-items: center; /* Alinear verticalmente */
-  background-color: #ffffff; /* Fondo blanco */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  display: flex; /* Usar flexbox para alinear contenido */
-  justify-content: flex-end; /* Alinear contenido a la derecha */
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 5px; 
+  margin-bottom: 20px;
+  align-items: center; 
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
 }
-
-/* Estilo de los botones */
 .boton {
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Esquinas redondeadas */
-  padding: 10px 15px; /* Espaciado interno */
-  cursor: pointer; /* Cambiar cursor al pasar el ratón */
-  
+  background-color: #007bff;
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
 }
-
-/* Estilo del footer */
 .footer {
-  background-color: #333; /* Fondo oscuro */
-  color: white; /* Color del texto */
-  text-align: center; /* Alinear texto al centro */
-  padding: 10px; /* Espaciado interno */
-  border-top: 1px solid #ccc; /* Borde superior */
-  margin-top: 20px; /* Espaciado superior */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
   border-radius: 10px;
 }
-
-
-/* Iconos en la sección de información */
 .icono {
-  width: 40px; /* Ancho de los iconos */
-  height: 40px; /* Altura de los iconos */
-  margin: 0 10px; /* Espaciado lateral */
-  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  object-fit: contain;
 }
-
 .iconows{
-  width: 50px; /* Ancho de los iconos */
-  height: 50px; /* Altura de los iconos */
-  margin: 0 10px; /* Espaciado lateral */
-  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
-
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  object-fit: contain;
 }
-
-/* Fila y columnas */
 .fila {
-  display: flex; /* Usar flexbox para columnas */
-  justify-content: space-between; /* Espaciado entre columnas */
-  flex-wrap: wrap; /* Permitir que las columnas se envuelvan */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 .columna {
-  flex: 1; /* Cada columna ocupa el mismo espacio */
-  margin: 10px; /* Espaciado entre columnas */
-  min-width: 250px; /* Ancho mínimo para cada columna */
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
 }
