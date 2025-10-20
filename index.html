@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum Vitae</title>
+  <link rel="icon" href="img/patricio.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/miestilo.css" />
+  <link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+  <h2 style="text-align: center;">Curriculum vitae</h2>
+  <div class="container py-4">
+    <header class="encabezado d-flex justify-content-between align-items-center rounded p-4 mb-4 shadow" style="background-color: #746d6d;">
+      <div class="header-texto text-white">
+        <h2><i class="bi bi-person-badge me-2"></i>Patricio A. Gallardo B.</h2>
+        <p><i class="bi bi-mortarboard me-1"></i>Técnico de nivel superior Analista programador Universidad Inacap</p>
+        <p><i class="bi bi-code-slash me-1"></i>Desarrollador Back end junior / trainee</p>
+      </div>
+      <img src="img/patricio.png" alt="Patricio Gallardo" class="imagen rounded-circle" width="110" height="110" />
+    </header>
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
+         <h3 style="color:#e83e8c;">
+  <i class="bi bi-person-lines-fill me-2"></i>Mi información personal
+</h3>
+    <p>La información que puedes revisar aquí es de carácter privado y forma parte de mis datos personales.</p>
+          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion0.html'">
+            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
+         <h3 style="color: #6f42c1;">
+  <i class="bi bi-person-lines-fill me-2"></i>Mis conocimientos</h3>
+          <p>Revisa mi experiencia académica y mis logros en certificaciones, aquí accederás a una galería que te muestra mis logros.</p>
+          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion1.html'">
+            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
+        <h3 style="color: #e83e8c;">
+  <i class="bi bi-person-lines-fill me-2"></i>Lo que se hacer
+</h3>
+      <p>Aquí puedes ver mi experiencia en el mundo laboral, con qué estoy familiarizado y tendrás acceso a mi repositorio Github...</p>
+          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion2.html'">
+            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="redes-sociales d-flex justify-content-end align-items-center bg-white rounded shadow p-2 mt-4">
+  <h5 class="me-3 mb-0"><i class="bi bi-share-fill me-1"></i>Sígueme en:</h5>
+  <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="ms-2" aria-label="LinkedIn">
+    <i class="bi bi-linkedin fs-3 text-primary"></i>
+  </a>
+  <a href="#" id="abrirPopup" class="ms-3" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp fs-3 text-success"></i>
+  </a>
+  <a href="https://github.com/pgallardob" target="_blank" class="ms-3" aria-label="GitHub">
+    <i class="bi bi-github fs-3 text-dark"></i>
+  </a>
+</div>
+    <div id="popup" class="popup-oculto">
+      <div class="popup-contenido text-center">
+        <span id="cerrarPopup" class="cerrar">&times;</span>
+        <br>
+        <p>Escríbeme</p>
+        <img src="img/patricio.png" class="foto rounded-circle mb-3" alt="Mi Foto" />
+        <p> Whatsapp</p>
+        <p class="telefono fs-5">+569 30748991</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-center text-white py-3 mt-5 rounded" style="background-color: #333;">
+    <p>|| &copy; 2025 || Desarrollado por Pgallardo ||</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

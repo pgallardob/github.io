@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería</title>
+  <link rel="icon" href="img/patricio.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/miestilo1.css" />
+  <link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+  <h2 style="text-align: center;">Galería de Certificaciones</h2>
+  <div class="contenedor">
+    <header class="encabezado">
+      <div class="header-texto">
+        <h2>Patricio A. Gallardo B.</h2>
+        <p>Técnico de nivel superior Analista programador Universidad Inacap</p>
+        <p>Desarrollador Back end junior / trainee</p>
+      </div>
+      <img src="img/patricio.png" alt="Patricio Gallardo" class="imagen" />
+    </header>
+    <div class="row galeria-row" aria-label="Galería de imágenes">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/1.png" alt="Certificación en Java" />
+        <div class="descripcion"><i class="bi bi-award-fill text-primary"></i> Certificación en JavaScript - 2022</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/4.png" alt="Release Manager flosum" />
+        <div class="descripcion"><i class="bi bi-tools text-warning"></i> Certificación Manipulación de String</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/2.png" alt="Curso de Salesforce" />
+        <div class="descripcion"><i class="bi bi-book-half text-success"></i> Certificación Flujo JavaScript</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/3.png" alt="Proyecto Web" />
+        <div class="descripcion"><i class="bi bi-code-slash text-info"></i> Certificación combinación y subconsultas SQL</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/5.png" alt="Broker Inmobiliario" />
+        <div class="descripcion"><i class="bi bi-building text-danger"></i> Certificación consultas agrupadas SQL</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/6.png" alt="Supervisor Movistar" />
+        <div class="descripcion"><i class="bi bi-people-fill text-secondary"></i> Certificación Eliminación de registros SQL</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/7.png" alt="Certificado Nextel" />
+        <div class="descripcion"><i class="bi bi-patch-check-fill text-success"></i> Certificación integridad de datos SQL</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+        <img src="img/8.jpeg" alt="Proyecto final" />
+        <div class="descripcion"><i class="bi bi-check-circle-fill text-primary"></i> Certificado de título</div>
+      </div>
+    </div>
+    <div class="botones">
+      <div class="text-center my-4">
+        <button id="botonVolver" class="btn btn-primary mr-2">
+          <i class="bi bi-arrow-left-circle mr-1"></i>Volver
+        </button>
+        <button id="botonSalir" class="btn btn-danger">
+          <i class="bi bi-box-arrow-right mr-1"></i>Salir
+        </button>
+      </div>
+    </div>
+    <div id="fullscreenOverlay" role="dialog" aria-modal="true" tabindex="-1">
+      <img src="" alt="Imagen ampliada" id="fullscreenImg" />
+    </div>
+    <div class="redes-sociales d-flex justify-content-end align-items-center bg-white rounded shadow p-2 mt-4">
+      <h5 class="mr-3 mb-0"><i class="bi bi-share-fill mr-1"></i>Sígueme en:</h5>
+      <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="ml-2" aria-label="LinkedIn">
+        <i class="bi bi-linkedin text-primary" style="font-size: 1.75rem;"></i></a>
+      <a href="#" id="abrirPopup" class="ml-3" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp text-success" style="font-size: 1.75rem;"></i></a>
+      <a href="https://github.com/pgallardob" target="_blank" class="ml-3" aria-label="GitHub">
+        <i class="bi bi-github text-dark" style="font-size: 1.75rem;"></i></a>
+    </div>
+<footer class="footer text-center text-white py-3 mt-5 rounded" style="background-color: #333;">
+    <p>|| &copy; 2025 || Desarrollado por Pgallardo ||</p>
+  </footer>
+  </div>
+<div id="popup" class="popup-oculto">
+  <div class="popup-contenido text-center">
+    <span id="cerrarPopup" class="cerrar">&times;</span>
+    <br>
+    <p>Escríbeme</p>
+    <img src="img/patricio.png" class="foto rounded-circle mb-3" alt="Mi Foto" />
+    <p>Whatsapp</p>
+    <p class="telefono fs-5">+569 30748991</p>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
