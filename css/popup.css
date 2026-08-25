@@ -4,6 +4,7 @@
 
 #popup:not(.popup-oculto) {
   display: flex;
+  animation: fadeIn 0.3s ease;
 }
 
 #popup {
@@ -12,37 +13,59 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
 }
 
 .popup-contenido {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
   text-align: center;
   position: relative;
-  max-width: 300px;
+  max-width: 320px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
 }
 
 .foto {
-  width: 100px;
-  height: 100px;
-  border-radius: 60%;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  border: 3px solid #c9a227;
 }
 
 .telefono {
-  font-size: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a3c34;
 }
 
 .cerrar {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 22px;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
   cursor: pointer;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+.cerrar:hover {
+  color: #c0392b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const abrirBtn = document.getElementById('abrirPopup');
-  const cerrarBtn = document.getElementById('cerrarPopup');
   const popup = document.getElementById('popup');
-  if (!abrirBtn || !cerrarBtn || !popup) {
-    console.warn("No se encontró uno de los elementos del popup.");
+  const cerrarBtn = document.getElementById('cerrarPopup');
+  if (!popup || !cerrarBtn) {
     return;
   }
-  abrirBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    popup.classList.remove('popup-oculto');
+
+  const abrirBtns = document.querySelectorAll('#abrirPopup, #abrirPopupFooter');
+  abrirBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      popup.classList.remove('popup-oculto');
+    });
   });
+
   cerrarBtn.addEventListener('click', function () {
     popup.classList.add('popup-oculto');
   });
+
   popup.addEventListener('click', function (e) {
     if (e.target === popup) {
       popup.classList.add('popup-oculto');

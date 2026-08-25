@@ -3,84 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curriculum Vitae</title>
+  <title>Patricio A. Gallardo B. - Desarrollador Back end</title>
   <link rel="icon" href="img/patricio.png" type="image/png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/miestilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/premium.css" />
   <link rel="stylesheet" href="css/popup.css" />
 </head>
 <body>
-  <h2 style="text-align: center;">Curriculum vitae</h2>
-  <div class="container py-4">
-    <header class="encabezado d-flex justify-content-between align-items-center rounded p-4 mb-4 shadow" style="background-color: #746d6d;">
-      <div class="header-texto text-white">
-        <h2><i class="bi bi-person-badge me-2"></i>Patricio A. Gallardo B.</h2>
-        <p><i class="bi bi-mortarboard me-1"></i>Técnico de nivel superior Analista programador Universidad Inacap</p>
-        <p><i class="bi bi-code-slash me-1"></i>Desarrollador Back end junior / trainee</p>
+  <nav class="navbar navbar-expand-lg navbar-premium">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Curriculum Vitae</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="seccion0.html">Datos Personales</a></li>
+          <li class="nav-item"><a class="nav-link" href="seccion1.html">Certificaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="seccion2.html">Experiencia</a></li>
+        </ul>
       </div>
-      <img src="img/patricio.png" alt="Patricio Gallardo" class="imagen rounded-circle" width="110" height="110" />
-    </header>
-    <div class="row g-4">
-      <div class="col-md-4 d-flex">
-        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
-         <h3 style="color:#e83e8c;">
-  <i class="bi bi-person-lines-fill me-2"></i>Mi información personal
-</h3>
-    <p>La información que puedes revisar aquí es de carácter privado y forma parte de mis datos personales.</p>
-          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion0.html'">
-            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
-          </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1><i class="bi bi-person-badge me-2"></i>Patricio A. Gallardo B.</h1>
+          <p class="subtitle"><i class="bi bi-mortarboard"></i>Técnico de nivel superior Analista Programador - Inacap</p>
+          <span class="role-badge"><i class="bi bi-code-slash me-1"></i>Desarrollador Back end</span>
         </div>
+        <span class="hero-img-wrapper">
+          <img src="img/patricio.png" alt="Patricio Gallardo" class="hero-img" />
+          <svg class="open-to-work-svg" viewBox="0 0 148 148" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="text-curve" d="M 20,100 A 62,62 0 0 0 128,100" />
+            </defs>
+            <path d="M 20,100 A 62,62 0 0 0 128,100" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" />
+            <path d="M 20,100 A 62,62 0 0 0 128,100" fill="none" stroke="#2e7d32" stroke-width="13" stroke-linecap="round" />
+            <text font-size="7" font-weight="700" fill="#fff" letter-spacing="0.5" font-family="Inter, sans-serif">
+              <textPath href="#text-curve" startOffset="50%" text-anchor="middle">#OPEN_TO_WORK</textPath>
+            </text>
+          </svg>
+        </span>
       </div>
-      <div class="col-md-4 d-flex">
-        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
-         <h3 style="color: #6f42c1;">
-  <i class="bi bi-person-lines-fill me-2"></i>Mis conocimientos</h3>
-          <p>Revisa mi experiencia académica y mis logros en certificaciones, aquí accederás a una galería que te muestra mis logros.</p>
-          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion1.html'">
-            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
-          </button>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-4">
+          <div class="stat-item">
+            <div class="stat-number">+8</div>
+            <div class="stat-label">Certificaciones</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 d-flex">
-        <div class="seccion p-4 rounded shadow bg-white d-flex flex-column">
-        <h3 style="color: #e83e8c;">
-  <i class="bi bi-person-lines-fill me-2"></i>Lo que se hacer
-</h3>
-      <p>Aquí puedes ver mi experiencia en el mundo laboral, con qué estoy familiarizado y tendrás acceso a mi repositorio Github...</p>
-          <button class="btn btn-primary mt-auto align-self-start" onclick="location.href='seccion2.html'">
-            <i class="bi bi-arrow-right-circle me-1"></i>Ver Más
-          </button>
+        <div class="col-4">
+          <div class="stat-item">
+            <div class="stat-number">+5</div>
+            <div class="stat-label">Proyectos</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stat-item">
+            <div class="stat-number">2026</div>
+            <div class="stat-label">Año actual</div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="redes-sociales d-flex justify-content-end align-items-center bg-white rounded shadow p-2 mt-4">
-  <h5 class="me-3 mb-0"><i class="bi bi-share-fill me-1"></i>Sígueme en:</h5>
-  <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="ms-2" aria-label="LinkedIn">
-    <i class="bi bi-linkedin fs-3 text-primary"></i>
-  </a>
-  <a href="#" id="abrirPopup" class="ms-3" aria-label="WhatsApp">
-    <i class="bi bi-whatsapp fs-3 text-success"></i>
-  </a>
-  <a href="https://github.com/pgallardob" target="_blank" class="ms-3" aria-label="GitHub">
-    <i class="bi bi-github fs-3 text-dark"></i>
-  </a>
-</div>
-    <div id="popup" class="popup-oculto">
-      <div class="popup-contenido text-center">
-        <span id="cerrarPopup" class="cerrar">&times;</span>
-        <br>
-        <p>Escríbeme</p>
-        <img src="img/patricio.png" class="foto rounded-circle mb-3" alt="Mi Foto" />
-        <p> Whatsapp</p>
-        <p class="telefono fs-5">+569 30748991</p>
+  </section>
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="section-card">
+          <div class="card-icon pink"><i class="bi bi-person-lines-fill"></i></div>
+          <h3>Mi información personal</h3>
+          <p>La información que puedes revisar aquí es de carácter privado y forma parte de mis datos personales.</p>
+          <a href="seccion0.html" class="btn-premium"><i class="bi bi-arrow-right-circle"></i>Ver Más</a>
+        </div>
       </div>
+      <div class="col-md-4">
+        <div class="section-card">
+          <div class="card-icon purple"><i class="bi bi-award-fill"></i></div>
+          <h3>Mis certificaciones</h3>
+          <p>Revisa mi experiencia académica y mis logros en certificaciones, aquí accederás a una galería que te muestra mis logros.</p>
+          <a href="seccion1.html" class="btn-premium"><i class="bi bi-arrow-right-circle"></i>Ver Más</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-card">
+          <div class="card-icon blue"><i class="bi bi-layers"></i></div>
+          <h3>Mi experiencia</h3>
+          <p>Aquí puedes ver mi experiencia en el mundo laboral, con qué estoy familiarizado y tendrás acceso a mi repositorio Github...</p>
+          <a href="seccion2.html" class="btn-premium"><i class="bi bi-arrow-right-circle"></i>Ver Más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-bar">
+      <h5><i class="bi bi-share-fill"></i>Sígueme en:</h5>
+      <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="linkedin" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#" id="abrirPopup" class="whatsapp" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://github.com/pgallardob" target="_blank" class="github" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
     </div>
   </div>
-  <footer class="footer text-center text-white py-3 mt-5 rounded" style="background-color: #333;">
-    <p>|| &copy; 2025 || Desarrollado por Pgallardo ||</p>
+
+  <div id="popup" class="popup-oculto">
+    <div class="popup-contenido text-center">
+      <span id="cerrarPopup" class="cerrar">&times;</span>
+      <p><i class="bi bi-whatsapp me-1 text-success"></i>Escríbeme</p>
+      <img src="img/patricio.png" class="foto" alt="Mi Foto" />
+      <p class="telefono">+569 30748991</p>
+    </div>
+  </div>
+
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><i class="bi bi-person-badge"></i>Patricio A. Gallardo B.</h5>
+          <p>Desarrollador Back end</p>
+        </div>
+        <div class="footer-col">
+          <h5><i class="bi bi-link-45deg"></i>Enlaces</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="seccion0.html">Datos Personales</a></li>
+            <li><a href="seccion1.html">Certificaciones</a></li>
+            <li><a href="seccion2.html">Experiencia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><i class="bi bi-telephone"></i>Contacto</h5>
+          <p><i class="bi bi-envelope me-1"></i>pgallardob@hotmail.com</p>
+          <p><i class="bi bi-phone me-1"></i>+569 30748991</p>
+          <p><i class="bi bi-geo-alt me-1"></i>Peñaflor, Santiago, Chile</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>|| &copy; 2026 || Desarrollado por <span class="accent">Pgallardo</span> ||</p>
+      </div>
+    </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/popup.js"></script>
 </body>

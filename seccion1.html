@@ -3,96 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galería</title>
+  <title>Certificaciones - Patricio A. Gallardo B.</title>
   <link rel="icon" href="img/patricio.png" type="image/png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/miestilo1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/premium.css" />
   <link rel="stylesheet" href="css/popup.css" />
 </head>
 <body>
-  <h2 style="text-align: center;">Galería de Certificaciones</h2>
-  <div class="contenedor">
-    <header class="encabezado">
-      <div class="header-texto">
-        <h2>Patricio A. Gallardo B.</h2>
-        <p>Técnico de nivel superior Analista programador Universidad Inacap</p>
-        <p>Desarrollador Back end junior / trainee</p>
+  <nav class="navbar navbar-expand-lg navbar-premium">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Curriculum Vitae</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="seccion0.html">Datos Personales</a></li>
+          <li class="nav-item"><a class="nav-link active" href="seccion1.html">Certificaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="seccion2.html">Experiencia</a></li>
+        </ul>
       </div>
-      <img src="img/patricio.png" alt="Patricio Gallardo" class="imagen" />
-    </header>
-    <div class="row galeria-row" aria-label="Galería de imágenes">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
-        <img src="img/1.png" alt="Certificación en Java" />
-        <div class="descripcion"><i class="bi bi-award-fill text-primary"></i> Certificación en JavaScript - 2022</div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1><i class="bi bi-person-badge me-2"></i>Patricio A. Gallardo B.</h1>
+          <p class="subtitle"><i class="bi bi-mortarboard"></i>Técnico de nivel superior Analista Programador - Inacap</p>
+          <span class="role-badge"><i class="bi bi-code-slash me-1"></i>Desarrollador Back end</span>
+        </div>
+        <span class="hero-img-wrapper">
+          <img src="img/patricio.png" alt="Patricio Gallardo" class="hero-img" />
+          <svg class="open-to-work-svg" viewBox="0 0 148 148" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="text-curve" d="M 20,100 A 62,62 0 0 0 128,100" />
+            </defs>
+            <path d="M 20,100 A 62,62 0 0 0 128,100" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" />
+            <path d="M 20,100 A 62,62 0 0 0 128,100" fill="none" stroke="#2e7d32" stroke-width="13" stroke-linecap="round" />
+            <text font-size="7" font-weight="700" fill="#fff" letter-spacing="0.5" font-family="Inter, sans-serif">
+              <textPath href="#text-curve" startOffset="50%" text-anchor="middle">#OPEN_TO_WORK</textPath>
+            </text>
+          </svg>
+        </span>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+    </div>
+  </section>
+
+  <div class="page-title">Galería de Certificaciones</div>
+
+  <div class="container py-5">
+    <div class="gallery-grid">
+      <div class="gallery-item" tabindex="0">
+        <img src="img/1.png" alt="Certificación en JavaScript" />
+        <div class="gallery-desc"><i class="bi bi-award-fill text-primary"></i> Certificación en JavaScript - 2022</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
         <img src="img/4.png" alt="Release Manager flosum" />
-        <div class="descripcion"><i class="bi bi-tools text-warning"></i> Certificación Manipulación de String</div>
+        <div class="gallery-desc"><i class="bi bi-tools text-warning"></i> Certificación Manipulación de String</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/2.png" alt="Curso de Salesforce" />
-        <div class="descripcion"><i class="bi bi-book-half text-success"></i> Certificación Flujo JavaScript</div>
+        <div class="gallery-desc"><i class="bi bi-book-half text-success"></i> Certificación Flujo JavaScript</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/3.png" alt="Proyecto Web" />
-        <div class="descripcion"><i class="bi bi-code-slash text-info"></i> Certificación combinación y subconsultas SQL</div>
+        <div class="gallery-desc"><i class="bi bi-code-slash text-info"></i> Certificación combinación y subconsultas SQL</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/5.png" alt="Broker Inmobiliario" />
-        <div class="descripcion"><i class="bi bi-building text-danger"></i> Certificación consultas agrupadas SQL</div>
+        <div class="gallery-desc"><i class="bi bi-building text-danger"></i> Certificación consultas agrupadas SQL</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/6.png" alt="Supervisor Movistar" />
-        <div class="descripcion"><i class="bi bi-people-fill text-secondary"></i> Certificación Eliminación de registros SQL</div>
+        <div class="gallery-desc"><i class="bi bi-people-fill text-secondary"></i> Certificación Eliminación de registros SQL</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/7.png" alt="Certificado Nextel" />
-        <div class="descripcion"><i class="bi bi-patch-check-fill text-success"></i> Certificación integridad de datos SQL</div>
+        <div class="gallery-desc"><i class="bi bi-patch-check-fill text-success"></i> Certificación integridad de datos SQL</div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria-item" tabindex="0">
+      <div class="gallery-item" tabindex="0">
         <img src="img/8.jpeg" alt="Proyecto final" />
-        <div class="descripcion"><i class="bi bi-check-circle-fill text-primary"></i> Certificado de título</div>
+        <div class="gallery-desc"><i class="bi bi-check-circle-fill text-primary"></i> Certificado de título</div>
       </div>
     </div>
-    <div class="botones">
-      <div class="text-center my-4">
-        <button id="botonVolver" class="btn btn-primary mr-2">
-          <i class="bi bi-arrow-left-circle mr-1"></i>Volver
-        </button>
-        <button id="botonSalir" class="btn btn-danger">
-          <i class="bi bi-box-arrow-right mr-1"></i>Salir
-        </button>
-      </div>
-    </div>
+
     <div id="fullscreenOverlay" role="dialog" aria-modal="true" tabindex="-1">
       <img src="" alt="Imagen ampliada" id="fullscreenImg" />
     </div>
-    <div class="redes-sociales d-flex justify-content-end align-items-center bg-white rounded shadow p-2 mt-4">
-      <h5 class="mr-3 mb-0"><i class="bi bi-share-fill mr-1"></i>Sígueme en:</h5>
-      <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="ml-2" aria-label="LinkedIn">
-        <i class="bi bi-linkedin text-primary" style="font-size: 1.75rem;"></i></a>
-      <a href="#" id="abrirPopup" class="ml-3" aria-label="WhatsApp">
-        <i class="bi bi-whatsapp text-success" style="font-size: 1.75rem;"></i></a>
-      <a href="https://github.com/pgallardob" target="_blank" class="ml-3" aria-label="GitHub">
-        <i class="bi bi-github text-dark" style="font-size: 1.75rem;"></i></a>
+
+    <div class="btn-row">
+      <button id="botonVolver" class="btn-outline-premium">
+        <i class="bi bi-arrow-left-circle"></i>Volver
+      </button>
+      <button id="botonSalir" class="btn-danger-premium">
+        <i class="bi bi-box-arrow-right"></i>Salir
+      </button>
     </div>
-<footer class="footer text-center text-white py-3 mt-5 rounded" style="background-color: #333;">
-    <p>|| &copy; 2025 || Desarrollado por Pgallardo ||</p>
+
+    <div class="social-bar">
+      <h5><i class="bi bi-share-fill"></i>Sígueme en:</h5>
+      <a href="https://www.linkedin.com/in/patricio-gallardo-017880351" target="_blank" class="linkedin" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#" id="abrirPopup" class="whatsapp" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://github.com/pgallardob" target="_blank" class="github" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="popup" class="popup-oculto">
+    <div class="popup-contenido text-center">
+      <span id="cerrarPopup" class="cerrar">&times;</span>
+      <p><i class="bi bi-whatsapp me-1 text-success"></i>Escríbeme</p>
+      <img src="img/patricio.png" class="foto" alt="Mi Foto" />
+      <p class="telefono">+569 30748991</p>
+    </div>
+  </div>
+
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><i class="bi bi-person-badge"></i>Patricio A. Gallardo B.</h5>
+          <p>Desarrollador Back end</p>
+        </div>
+        <div class="footer-col">
+          <h5><i class="bi bi-link-45deg"></i>Enlaces</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="seccion0.html">Datos Personales</a></li>
+            <li><a href="seccion1.html">Certificaciones</a></li>
+            <li><a href="seccion2.html">Experiencia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5><i class="bi bi-telephone"></i>Contacto</h5>
+          <p><i class="bi bi-envelope me-1"></i>pgallardob@hotmail.com</p>
+          <p><i class="bi bi-phone me-1"></i>+569 30748991</p>
+          <p><i class="bi bi-geo-alt me-1"></i>Peñaflor, Santiago, Chile</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>|| &copy; 2026 || Desarrollado por <span class="accent">Pgallardo</span> ||</p>
+      </div>
+    </div>
   </footer>
-  </div>
-<div id="popup" class="popup-oculto">
-  <div class="popup-contenido text-center">
-    <span id="cerrarPopup" class="cerrar">&times;</span>
-    <br>
-    <p>Escríbeme</p>
-    <img src="img/patricio.png" class="foto rounded-circle mb-3" alt="Mi Foto" />
-    <p>Whatsapp</p>
-    <p class="telefono fs-5">+569 30748991</p>
-  </div>
-</div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/popup.js"></script>
 </body>
