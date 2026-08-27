@@ -416,6 +416,39 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
+.project-card .card-text {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.project-card .card-text.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card .read-more {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  transition: var(--transition);
+}
+
+.project-card .read-more:hover {
+  color: var(--color-accent);
+}
+
 /* ===== DATA LIST ===== */
 .data-list {
   list-style: none;
@@ -608,6 +641,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.footer-premium .footer-qr {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 0.75rem;
+  border: 2px solid var(--color-accent);
 }
 
 .footer-premium .footer-col p,

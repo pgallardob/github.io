@@ -43,3 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function toggleReadMore(btn) {
+  var text = btn.previousElementSibling;
+  if (text.classList.contains('collapsed')) {
+    text.classList.remove('collapsed');
+    btn.textContent = 'Leer menos';
+  } else {
+    text.classList.add('collapsed');
+    btn.textContent = 'Leer más';
+  }
+}
