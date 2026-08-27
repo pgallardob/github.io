@@ -23,3 +23,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function openQR() {
+  var overlay = document.getElementById('qrOverlay');
+  if (overlay) {
+    overlay.classList.add('show');
+  }
+}
+
+function closeQR(e) {
+  var overlay = document.getElementById('qrOverlay');
+  if (!overlay) return;
+  if (e && e.target.tagName === 'IMG') return;
+  overlay.classList.remove('show');
+}

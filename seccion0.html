@@ -134,7 +134,8 @@
         <div class="footer-col">
           <h5><i class="bi bi-person-badge"></i>Patricio A. Gallardo B.</h5>
           <p>Desarrollador Back end</p>
-          <img src="img/miQR.jpg" alt="QR de contacto" class="footer-qr" />
+          <img src="img/miQR.jpg" alt="QR de contacto" class="footer-qr" onclick="openQR()" />
+          <p class="qr-hint" onclick="openQR()">Click para escanear</p>
         </div>
         <div class="footer-col">
           <h5><i class="bi bi-link-45deg"></i>Enlaces</h5>
@@ -157,6 +158,11 @@
       </div>
     </div>
   </footer>
+
+  <div id="qrOverlay" onclick="closeQR(event)">
+    <img src="img/miQR.jpg" alt="QR de contacto" />
+    <button class="qr-close" onclick="closeQR(event)">Cerrar</button>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
